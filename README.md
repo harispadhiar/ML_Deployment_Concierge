@@ -1,3 +1,13 @@
+---
+title: ML Deployment Concierge
+emoji: 🚀
+colorFrom: blue
+colorTo: indigo
+sdk: gradio
+app_file: app.py
+pinned: false
+---
+
 # ML Deployment Concierge
 
 A multi-agent self-correcting packaging assistant designed to build, test, and package deployment-ready Gradio/Docker bundles for Hugging Face Spaces starting from just a trained ML model file.
