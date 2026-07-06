@@ -1,0 +1,31 @@
+{
+  "fixes": [
+    {
+      "error_class": "missing_audioop",
+      "error_pattern": "No module named 'audioop'",
+      "fix_description": "Pin Python version to 3.11-slim as audioop was removed in Python 3.13",
+      "action": {
+        "dockerfile": "FROM python:3.11-slim",
+        "requirements": []
+      }
+    },
+    {
+      "error_class": "missing_imp",
+      "error_pattern": "No module named 'imp'",
+      "fix_description": "Pin Python version to 3.11-slim as imp was removed in Python 3.12",
+      "action": {
+        "dockerfile": "FROM python:3.11-slim",
+        "requirements": []
+      }
+    },
+    {
+      "error_class": "keras_tf_mismatch",
+      "error_pattern": "ModuleNotFoundError: No module named 'keras.src'",
+      "fix_description": "Pin tensorflow to 2.15.0 and keras to 2.15.0 to avoid Keras 3 compatibility issues",
+      "action": {
+        "dockerfile": "FROM python:3.11-slim",
+        "requirements": ["tensorflow==2.15.0", "keras==2.15.0"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+# Python and Environment
+__pycache__/
+*.pyc
+.venv_test/
+venv/
+
+# AI Agent System Folders
+.agents/
+
+# App Specific Temporaries
+logs/
+bundle_*/
+*.zip
+
+# Ignore specific large files if they are generated tests
+# (We keep eval_cases since they are tracked for testing)
