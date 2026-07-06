@@ -14,3 +14,4 @@ bundle_*/
 
 # Ignore specific large files if they are generated tests
 # (We keep eval_cases since they are tracked for testing)
+.gitignore
