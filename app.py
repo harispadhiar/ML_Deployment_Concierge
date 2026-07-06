@@ -1,4 +1,6 @@
 import os
+os.environ["GRADIO_SSR_MODE"] = "False"
+
 import gradio as gr
 from orchestrator import run_orchestrator
 
